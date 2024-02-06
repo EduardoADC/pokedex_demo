@@ -1,0 +1,21 @@
+body {
+  width: 100vw;
+  height: 100svh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  height: 100svh;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    display: block;
+  }
+}
